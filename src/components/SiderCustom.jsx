@@ -119,6 +119,7 @@ class SiderCustom extends Component {
                     >
                         <Menu.Item key="/app/chart/echarts"><Link to={'/app/chart/echarts'}>echarts</Link></Menu.Item>
                         <Menu.Item key="/app/chart/recharts"><Link to={'/app/chart/recharts'}>recharts</Link></Menu.Item>
+                        <Menu.Item key="/app/chart/maps"><Link to={'/app/chart/maps'}>maps</Link></Menu.Item>
                     </SubMenu>
                     <SubMenu
                         key="sub4"

@@ -29,3 +29,42 @@ export const post = ({url, data, msg = '接口异常', headers}) =>
         console.log(err);
         message.warn(msg);
     });
+
+/**
+ * 公用put请求
+ * @param url       接口地址
+ * @param data      接口参数
+ * @param msg       接口异常提示
+ * @param headers   接口所需header配置
+ */
+export const put = ({url, data, msg = '接口异常', headers}) =>
+    axios.put(url, data, headers).then(res => res.data).catch(err => {
+        console.log(err);
+        message.warn(msg);
+    });
+
+/**
+ * 公用patch请求
+ * @param url       接口地址
+ * @param data      接口参数
+ * @param msg       接口异常提示
+ * @param headers   接口所需header配置
+ */
+export const patch = ({url, data, msg = '接口异常', headers}) =>
+    axios.patch(url, data, headers).then(res => res.data).catch(err => {
+        console.log(err);
+        message.warn(msg);
+    });
+
+/**
+ * 公用delete请求
+ * @param url       接口地址
+ * @param data      接口参数
+ * @param msg       接口异常提示
+ * @param headers   接口所需header配置
+ */
+export const _delete = ({url, data, msg = '接口异常', headers}) =>
+    axios.delete(url, data, headers).then(res => res.data).catch(err => {
+        console.log(err);
+        message.warn(msg);
+    });
